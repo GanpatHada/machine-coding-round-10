@@ -1,0 +1,78 @@
+#products{
+    padding: 20px;
+    height: 100%;
+
+}
+#products header{
+    height: 60px;
+    justify-content: space-between;
+}
+#products header button{
+    color: white;
+    background-color: rgb(28, 126, 255);
+    width: 60px;
+    height: 40px;
+    
+
+}
+
+thead tr{
+    background-color: lightgray;
+}
+table{
+    border-collapse: collapse;
+    display: block;
+    
+}
+table th,table td{
+    
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 5px;
+}
+table > *{
+    display: block;
+}
+table thead tr{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-start;
+}
+table tbody tr{
+    display: flex;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0px;
+} 
+tbody .name{
+    color: #3737f3;
+    text-decoration: underline;
+}
+tbody .price::before{
+    content: '\0024';
+}
+.image{
+    flex:1
+}
+.name{
+    flex: 1;
+    
+}
+.desc{
+    flex: 3;
+}
+.price,.supplier{
+     flex: 0.8;
+}
+.stock{
+    flex: 0.6;
+}
+table img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,27 @@
+nav{
+    flex: 1;
+    height: 100%;
+    background-color: black;
+}
+nav ul li{
+    list-style: none;
+    
+    height: 80px;
+}
+nav ul a{
+    color: gray;
+}
+.navs{
+    justify-content: flex-start;
+    padding-left: 10%;
+    cursor: pointer;
+}
+.navs:hover{
+    background-color: rgba(41, 41, 41, 0.603);
+    color: rgb(216, 216, 216);
+}
+nav ul a.active{
+    color: white;
+    font-weight: bold;
+    
+}

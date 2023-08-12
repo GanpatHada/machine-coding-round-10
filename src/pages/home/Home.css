@@ -1,0 +1,24 @@
+#home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+#home .cards{
+    width: 200px;
+}
+#home span{
+    font-weight: bold;
+    color: orange;
+    font-size: 1.4rem;
+}
+#home p{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+#home > div:first-child span{
+    color: green;
+}
+#home > div:last-child span{
+    color: red;
+}

@@ -1,0 +1,10 @@
+#departments{
+    display: flex;
+    flex-wrap: wrap;
+}
+#departments .cards{
+    width: 200px;
+    height: 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
