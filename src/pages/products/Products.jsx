@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./Products.css";
 import { DataContext } from "../../contexts/DataContext";
+import { Link } from "react-router-dom";
 const Products = () => {
   const {
     inventoryData,
@@ -87,7 +88,7 @@ const Products = () => {
                 <td className="image">
                   <img src={data.imageUrl} alt="" />
                 </td>
-                <td className="name">{data.name}</td>
+                <Link to={`/products/${data.id}`}><td className="name">{data.name}</td></Link>
                 <td className="desc">{data.description}</td>
                 <td className="price">{data.price}</td>
                 <td className="stock">{data.stock}</td>

@@ -1,0 +1,15 @@
+#image-section{
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+   
+}
+#product-details
+{
+    margin-left: 20px;
+}
+#image-section img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
