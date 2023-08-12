@@ -68,7 +68,7 @@ const Products = () => {
           <option>Price</option>
           <option>Stock</option>
         </select>
-        <button id="new-item">New</button>
+        <Link to='/addProduct'><button id="new-item">New</button></Link>
       </header>
       <table>
         <thead>
