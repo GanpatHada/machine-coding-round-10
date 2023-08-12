@@ -88,7 +88,7 @@ const Products = () => {
                 <td className="image">
                   <img src={data.imageUrl} alt="" />
                 </td>
-                <Link to={`/products/${data.id}`}><td className="name">{data.name}</td></Link>
+                <td className="name"><Link to={`/products/${data.id}`}>{data.name}</Link></td>
                 <td className="desc">{data.description}</td>
                 <td className="price">{data.price}</td>
                 <td className="stock">{data.stock}</td>

@@ -1,5 +1,5 @@
 #add-product{
-    width: 40%;
+    width: 30%;
     margin-left: 20px;
     margin-top: 20px;
     display: flex;
@@ -8,12 +8,25 @@
 #add-product h2{
     margin: 20px 0px;
 }
-input{
+#add-product input,#add-product select{
+    margin-top: 5px;
     height: 40px;
     width: 100%;
     border: 1px solid lightgray;
+    border-radius: 5px;
 }
 
 #add-product  label{
     color: rgb(143, 143, 143);
+   
+}
+#add-product button{
+    height: 40px;
+    width: 100px;
+    color:white;
+    background-color: rgb(24, 124, 255);
+    margin-top: 20px;
+}
+#add-product > div{
+    margin: 10px 0px;
 }

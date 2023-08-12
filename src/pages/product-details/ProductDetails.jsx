@@ -5,7 +5,7 @@ import './ProductDetails.css'
 const ProductDetails = () => {
   const {inventoryData}=useContext(DataContext)  
   const {productId}=useParams()  ;
-  const product=inventoryData.find(data=>data.id===Number(productId))
+  const product=inventoryData.find(data=>data.id.toString()===productId)
   const{name,price,stock,imageUrl,supplier,department,sku,delivered,description}=product
   return (
     <div id='product-details'>
