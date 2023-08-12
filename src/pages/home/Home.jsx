@@ -4,8 +4,8 @@ import { DataContext } from "../../contexts/DataContext";
 const Home = () => {
   const { inventoryData } = useContext(DataContext);
   const{totalStock,totalDelivered}=inventoryData.reduce((acc,cur)=>{
-    acc.totalStock=acc.totalStock+cur.stock;
-    acc.totalDelivered=acc.totalDelivered+cur.delivered;
+    acc.totalStock=acc.totalStock+Number(cur.stock);
+    acc.totalDelivered=acc.totalDelivered+Number(cur.delivered);
     return acc;
 
   },{totalStock:0,totalDelivered:0})
